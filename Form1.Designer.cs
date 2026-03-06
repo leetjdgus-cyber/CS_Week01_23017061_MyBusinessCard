@@ -32,6 +32,7 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -79,11 +80,23 @@
             label3.TabIndex = 3;
             label3.Text = "leetjdgus@gmail.com";
             // 
+            // button1
+            // 
+            button1.Font = new Font("한컴 고딕", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            button1.Location = new Point(100, 356);
+            button1.Name = "button1";
+            button1.Size = new Size(178, 76);
+            button1.TabIndex = 4;
+            button1.Text = "배경 색 랜덤 변경";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(818, 497);
+            ClientSize = new Size(815, 480);
+            Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -101,5 +114,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private Button button1;
     }
 }
