@@ -30,5 +30,15 @@ namespace MyBusinessCard
             this.BackColor = Color.FromArgb(rd.Next(256), rd.Next(256), rd.Next(256));
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var psi = new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = "https://github.com/leetjdgus-cyber",
+                UseShellExecute = true
+            };
+            System.Diagnostics.Process.Start(psi);
+        }
     }
 }
