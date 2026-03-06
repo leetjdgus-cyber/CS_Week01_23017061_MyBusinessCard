@@ -51,5 +51,22 @@ namespace MyBusinessCard
             pictureBox1.Image = Properties.Resources.KakaoTalk_20260306_163427120;
             ((System.Drawing.Image)pictureBox1.Image).RotateFlip(System.Drawing.RotateFlipType.Rotate90FlipNone);
         }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox1.Cursor = Cursors.Hand;
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.BorderStyle = BorderStyle.None;
+            pictureBox1.Cursor = Cursors.Default;
+        }
+
+        private void pictureBox1_MouseLeave_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
