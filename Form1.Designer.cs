@@ -29,33 +29,77 @@
         private void InitializeComponent()
         {
             pictureBox1 = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources._1111;
-            pictureBox1.Location = new Point(73, 71);
+            pictureBox1.Location = new Point(60, 71);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(257, 258);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("휴먼엑스포", 36F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            label1.Location = new Point(366, 71);
+            label1.Name = "label1";
+            label1.Size = new Size(170, 53);
+            label1.TabIndex = 1;
+            label1.Text = "이성현";
+            label1.Click += label1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("함초롬바탕", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            label2.ForeColor = Color.Olive;
+            label2.Location = new Point(400, 149);
+            label2.Name = "label2";
+            label2.Size = new Size(176, 45);
+            label2.TabIndex = 2;
+            label2.Text = "컴퓨터SW";
+            label2.Click += label2_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("함초롬바탕", 21.7499962F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            label3.ForeColor = Color.FromArgb(192, 192, 0);
+            label3.Location = new Point(400, 212);
+            label3.Name = "label3";
+            label3.Size = new Size(307, 38);
+            label3.TabIndex = 3;
+            label3.Text = "leetjdgus@gmail.com";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(818, 497);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(pictureBox1);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private PictureBox pictureBox1;
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }
