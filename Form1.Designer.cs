@@ -116,7 +116,7 @@
             button3.Font = new Font("한컴 고딕", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 129);
             button3.Location = new Point(400, 339);
             button3.Name = "button3";
-            button3.Size = new Size(110, 41);
+            button3.Size = new Size(110, 47);
             button3.TabIndex = 6;
             button3.Text = "사진변경";
             button3.UseVisualStyleBackColor = false;
